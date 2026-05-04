@@ -1,0 +1,21 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "sk-db9fcf6970b842acbb6ebedb6b5b2eda8d882f0a827a4ecf",
+    "ANTHROPIC_BASE_URL": "https://one.iflytek.com/api/llm/console/chat",
+    "ANTHROPIC_MODEL": "claude-haiku-4-5-20251001",
+    "ANTHROPIC_SMALL_FAST_MODEL": "claude-haiku-4-5-20251001",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "model": "opus[1m]",
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "superpowers-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers-marketplace"
+      }
+    }
+  }
+}

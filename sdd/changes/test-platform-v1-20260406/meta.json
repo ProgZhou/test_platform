@@ -1,0 +1,13 @@
+{
+  "change_id": "test-platform-v1-20260406",
+  "created_at": "2026-04-06T15:30:00+08:00",
+  "phases": {
+    "product": "completed",
+    "design": "completed",
+    "test_design": "completed",
+    "implementation": "completed",
+    "code_review": "completed",
+    "test_execution": "completed"
+  },
+  "current_phase": "completed"
+}

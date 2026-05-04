@@ -1,0 +1,54 @@
+{
+    "hooks": {
+        "PreToolUse": [
+            {
+                "matcher": "Edit|Write",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": ".claude/hooks/validate-change-id.sh"
+                    }
+                ]
+            }
+        ],
+        "PostToolUse": [
+            {
+                "matcher": "Edit|Write|Bash",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": ".claude/hooks/auto-update-memory.sh"
+                    }
+                ]
+            }
+        ],
+        "Stop": [
+            {
+                "matcher": "agent",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": ".claude/hooks/log-phase-completion.sh"
+                    }
+                ]
+            }
+        ]
+    },
+    "permissions": {
+        "allow": [
+            "Bash(git:*)",
+            "Bash(pnpm test:*)",
+            "Bash(prettier:*)",
+            "Bash(eslint:*)"
+        ],
+        "ask": [
+            "Bash(rm:*)",
+            "Bash(git push --force:*)",
+            "Bash(docker:*)"
+        ],
+        "deny": [
+            "Bash(rm -rf /:*)",
+            "Bash(sudo:*)"
+        ]
+    }
+}

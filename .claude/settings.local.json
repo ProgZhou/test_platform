@@ -14,7 +14,8 @@
       "Bash(go test:*)",
       "Bash(npm ci:*)",
       "mcp__ssh__ssh_create_directory",
-      "mcp__ssh__ssh_exec"
+      "mcp__ssh__ssh_exec",
+      "mcp__ssh__ssh_connect"
     ]
   }
 }

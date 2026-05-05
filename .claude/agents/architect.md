@@ -17,8 +17,8 @@ model: opus
 
 1. **探索代码库**：使用 Glob/Grep 了解现有项目结构、技术栈、已有模块和数据库表
 2. **阅读需求文档**：仔细阅读 `sdd/changes/{change-id}/product.md`，提取关键功能点
-3. **生成架构设计文档**：输出到 `sdd/changes/{change-id}/design.md`（高层设计，面向技术评审）
-4. **生成详细规格文档**：输出到 `sdd/changes/{change-id}/specs.md`（开发规格，面向编码实施）
+3. **生成架构设计文档**：输出到 `sdd/changes/{change-id}/design/design.md`（高层设计，面向技术评审）
+4. **生成详细规格文档**：输出到 `sdd/changes/{change-id}/design/specs.md`（开发规格，面向编码实施）
 5. **生成任务拆解**：输出到 `sdd/changes/{change-id}/tasks/frontend.md` 和 `tasks/backend.md`
 
 > ⚠️ **重要提示**：完成 design.md 和 specs.md 后，请在最终回复中明确提醒用户审阅两个文档。关键决策点（架构选型、数据库设计、接口协议）需要人工确认后再进入编码阶段。
